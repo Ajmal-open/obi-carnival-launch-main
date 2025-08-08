@@ -93,7 +93,7 @@ const Index = () => {
         <script type="application/ld+json">{JSON.stringify(eventSchema)}</script>
       </Helmet>
 
-      <header className="container max-w-6xl mx-auto py-6 flex items-center justify-between">
+      <header className="container max-w-6xl mx-auto py-8 md:py-12 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
           <Logo className="h-7 w-auto" />
         </a>
@@ -115,8 +115,8 @@ const Index = () => {
             {/* soft clouds gradient */}
             <div className="h-48 w-[140%] -left-20 absolute top-0 bg-gradient-to-b from-white/80 to-transparent rounded-b-[50%] blur-2xl" />
           </ParallaxLayer>
-          <div className="container max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-12 py-14 md:py-20 relative">
-            <div className="relative z-10 p-4 -m-4 md:p-8 md:-m-8 hero-text-mask hero-text-panel rounded-2xl">
+          <div className="container max-w-6xl mx-auto grid md:grid-cols-5 items-start gap-16 py-12 md:py-16 relative">
+            <div className="relative z-10 p-4 -m-4 md:p-8 md:-m-8 hero-text-mask hero-text-panel rounded-2xl md:col-span-2">
               <h1 className="text-4xl md:text-5xl leading-[1.1] max-w-[22ch]">
                 Obi’s Carnival: Spark Your Child’s Future!
               </h1>
@@ -132,17 +132,32 @@ const Index = () => {
               </div>
               <Countdown targetMonth={8} targetDay={7} />
             </div>
-            <div className="relative">
-              <HeroCarousel
-                images={[
-                  { src: "/images/hero-1.jpg", alt: "Kids exploring booths" },
-                  { src: "/images/hero-2.jpg", alt: "Art village fun" },
-                  { src: "/images/hero-3.jpg", alt: "Nature play" },
-                ]}
-                autoplayMs={4500}
-                heightClassName="h-64 md:h-[420px]"
-                pauseOnHover={true}
-              />
+            <div className="relative md:col-span-3">
+              <Reveal className="reveal">
+                <div className="relative group">
+
+                  
+                  {/* Main image container with enhanced styling */}
+                  <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                    {/* Gradient overlay for better text contrast */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10 pointer-events-none"></div>
+                    
+
+                    
+                    <img 
+                      src="/images/carnival-test.jpg?v=1" 
+                      alt="Obi's Learning Carnival - A vibrant illustration showing children exploring robotics, art, martial arts, and science booths in a green park setting with farm animals" 
+                      className="w-full h-64 md:h-[320px] object-cover"
+                    />
+                    
+
+                    
+
+                  </div>
+                  
+
+                </div>
+              </Reveal>
             </div>
           </div>
           {/* Centered secondary paragraph below hero */}
@@ -245,16 +260,68 @@ const Index = () => {
         {/* Fold 6: Stay Connected */}
         <section id="connect" className="bg-secondary py-14">
           <div className="container max-w-6xl mx-auto">
-            <h2 className="text-3xl">Stay Connected</h2>
-            <aside className="mt-6 rounded-lg border bg-card p-6 shadow-sm">
-              <ul className="space-y-3 text-muted-foreground">
-                <li>Join Our WhatsApp Community <a href="#" className="underline">[Insert WhatsApp Link]</a> for event updates and parenting tips.</li>
-                <li>Follow Us on Instagram <a href="#" className="underline">[Insert Handle]</a> for a glimpse of our Carnival moments.</li>
-                <li className="pt-2">Want to visit a future Carnival? Join our mailing list or WhatsApp group to stay in the loop and learn how Obi is redefining education for the next generation.</li>
-                <li className="pt-2">Contact Us:<br />Email: <a href="mailto:info@obi.life" className="underline">info@obi.life</a><br />Phone: <a href="tel:+15551234567" className="underline">+1 (555) 123-4567</a><br />Website: <a href="https://www.obi.life" className="underline" target="_blank" rel="noreferrer">www.obi.life</a></li>
-                <li className="italic">It’s not just school. It’s a shared journey to inspire your child’s future!</li>
-              </ul>
-            </aside>
+            <h2 className="text-3xl font-caveat">Stay Connected</h2>
+            <div className="mt-8 grid md:grid-cols-2 gap-6">
+              <Reveal className="reveal">
+                <div className="relative rounded-[12px] p-6 bg-[hsl(38_100%_94%)] text-[hsl(222.2_84%_4.9%)] shadow-sm -rotate-1"
+                  style={{
+                    backgroundImage:
+                      'linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.85)), url("data:image/svg+xml,%3Csvg width=\'160\' height=\'160\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cdefs%3E%3Cpattern id=\'p\' width=\'16\' height=\'16\' patternUnits=\'userSpaceOnUse\'%3E%3Cpath d=\'M0 16L16 0M-4 12L4 4M12 20L20 12\' stroke=\'%23d9c9a5\' stroke-width=\'0.5\' opacity=\'0.2\'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=\'url(%23p)\' width=\'100%25\' height=\'100%25\'/%3E%3C/svg%3E")',
+                    backgroundBlendMode: 'multiply',
+                  }}
+                >
+                  <div className="relative z-10">
+                    <h3 className="mb-4 font-semibold font-caveat text-xl text-primary">Join Our Community</h3>
+                    <ul className="space-y-3 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary">💬</span>
+                        <span>Join Our WhatsApp Community <a href="#" className="underline text-primary hover:text-primary/80 transition-colors">[Insert WhatsApp Link]</a> for event updates and parenting tips.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary">📸</span>
+                        <span>Follow Us on Instagram <a href="#" className="underline text-primary hover:text-primary/80 transition-colors">[Insert Handle]</a> for a glimpse of our Carnival moments.</span>
+                      </li>
+                      <li className="pt-2 text-sm">
+                        Want to visit a future Carnival? Join our mailing list or WhatsApp group to stay in the loop and learn how Obi is redefining education for the next generation.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </Reveal>
+              
+              <Reveal className="reveal" delayMs={60}>
+                <div className="relative rounded-[12px] p-6 bg-[hsl(38_100%_94%)] text-[hsl(222.2_84%_4.9%)] shadow-sm rotate-1"
+                  style={{
+                    backgroundImage:
+                      'linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.85)), url("data:image/svg+xml,%3Csvg width=\'160\' height=\'160\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cdefs%3E%3Cpattern id=\'p\' width=\'16\' height=\'16\' patternUnits=\'userSpaceOnUse\'%3E%3Cpath d=\'M0 16L16 0M-4 12L4 4M12 20L20 12\' stroke=\'%23d9c9a5\' stroke-width=\'0.5\' opacity=\'0.2\'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=\'url(%23p)\' width=\'100%25\' height=\'100%25\'/%3E%3C/svg%3E")',
+                    backgroundBlendMode: 'multiply',
+                  }}
+                >
+                  <div className="relative z-10">
+                    <h3 className="mb-4 font-semibold font-caveat text-xl text-primary">Get In Touch</h3>
+                    <div className="space-y-3 text-muted-foreground">
+                      <div className="flex items-center gap-2">
+                        <span className="text-primary">📧</span>
+                        <span>Email: <a href="mailto:info@obi.life" className="underline text-primary hover:text-primary/80 transition-colors">info@obi.life</a></span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-primary">📞</span>
+                        <span>Phone: <a href="tel:+15551234567" className="underline text-primary hover:text-primary/80 transition-colors">+1 (555) 123-4567</a></span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-primary">🌐</span>
+                        <span>Website: <a href="https://www.obi.life" className="underline text-primary hover:text-primary/80 transition-colors" target="_blank" rel="noreferrer">www.obi.life</a></span>
+                      </div>
+                      <div className="pt-4 mt-4 border-t border-primary/20">
+                        <p className="italic text-sm font-caveat text-primary">
+                          "It's not just school. It's a shared journey to inspire your child's future!"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
           </div>
         </section>
       </main>
