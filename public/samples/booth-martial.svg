@@ -1,1 +1,12 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <rect width="1000" height="600" fill="#FFF7E9"/>
+  <g transform="translate(120,120)">
+    <rect x="0" y="0" width="760" height="360" rx="24" fill="#ffffff" stroke="#E8D9B6"/>
+    <g transform="translate(60,60)">
+      <rect x="40" y="120" width="220" height="20" fill="#D62828"/>
+      <rect x="140" y="20" width="20" height="220" fill="#D62828"/>
+      <circle cx="300" cy="100" r="40" fill="#F7B538"/>
+    </g>
+    <text x="40" y="320" font-family="Nunito, sans-serif" font-size="32" fill="#1f2937">Martial Arts</text>
+  </g>
+</svg> 

@@ -1,1 +1,11 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <rect width="1000" height="600" fill="#FFF7E9"/>
+  <g transform="translate(120,120)">
+    <rect x="0" y="0" width="760" height="360" rx="24" fill="#ffffff" stroke="#E8D9B6"/>
+    <g transform="translate(60,40)">
+      <path d="M40,40 h120 v30 l-40,80 h-40 l-40,-80 z" fill="#9C27B0"/>
+      <circle cx="150" cy="150" r="18" fill="#FF6B6B"/>
+    </g>
+    <text x="40" y="320" font-family="Nunito, sans-serif" font-size="32" fill="#1f2937">Science Adventures</text>
+  </g>
+</svg> 

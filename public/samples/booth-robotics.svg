@@ -1,1 +1,13 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <rect width="1000" height="600" fill="#FFF7E9"/>
+  <g transform="translate(120,120)">
+    <rect x="0" y="0" width="760" height="360" rx="24" fill="#ffffff" stroke="#E8D9B6"/>
+    <g transform="translate(60,60)">
+      <circle cx="120" cy="120" r="70" fill="#219EBC"/>
+      <rect x="220" y="70" width="180" height="110" rx="14" fill="#F7B538"/>
+      <circle cx="260" cy="120" r="12" fill="#fff"/>
+      <circle cx="320" cy="120" r="12" fill="#fff"/>
+    </g>
+    <text x="40" y="320" font-family="Nunito, sans-serif" font-size="32" fill="#1f2937">Robotics & AI</text>
+  </g>
+</svg> 

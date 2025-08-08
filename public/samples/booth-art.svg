@@ -1,1 +1,13 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <rect width="1000" height="600" fill="#FFF7E9"/>
+  <g transform="translate(120,120)">
+    <rect x="0" y="0" width="760" height="360" rx="24" fill="#ffffff" stroke="#E8D9B6"/>
+    <g transform="translate(60,60)">
+      <rect x="0" y="0" width="200" height="120" fill="#F7B538"/>
+      <rect x="220" y="20" width="40" height="140" fill="#9C27B0"/>
+      <rect x="280" y="20" width="40" height="140" fill="#219EBC"/>
+      <rect x="340" y="20" width="40" height="140" fill="#D62828"/>
+    </g>
+    <text x="40" y="320" font-family="Nunito, sans-serif" font-size="32" fill="#1f2937">Art Village</text>
+  </g>
+</svg> 

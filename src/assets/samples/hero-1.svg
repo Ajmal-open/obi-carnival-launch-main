@@ -1,1 +1,37 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#F9983E"/>
+      <stop offset="1" stop-color="#E54646"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#FFF7E9"/>
+  <g opacity="0.1">
+    <circle cx="100" cy="120" r="8" fill="#2DB3C6"/>
+    <circle cx="260" cy="420" r="6" fill="#E54646"/>
+    <circle cx="560" cy="220" r="5" fill="#8B5CF6"/>
+    <circle cx="920" cy="340" r="7" fill="#2DB3C6"/>
+  </g>
+  <g transform="translate(140,120)">
+    <path d="M0 0 L920 0 L880 40 L40 40 Z" fill="#6B4F4F"/>
+    <g transform="translate(8,-20)">
+      <g>
+        <polygon points="0,0 40,0 20,30" fill="#D62828"/>
+        <polygon points="40,0 80,0 60,30" fill="#F7B538"/>
+        <polygon points="80,0 120,0 100,30" fill="#219EBC"/>
+        <polygon points="120,0 160,0 140,30" fill="#9C27B0"/>
+        <polygon points="160,0 200,0 180,30" fill="#FF6B6B"/>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(140,260)">
+    <rect x="0" y="260" width="920" height="220" fill="#fff" rx="24"/>
+    <text x="20" y="60" font-family="'Baloo 2', Nunito, sans-serif" font-size="56" fill="#1f2937" font-weight="700">Learning Carnival</text>
+    <text x="20" y="110" font-family="Nunito, sans-serif" font-size="26" fill="#6b7280">Discover. Create. Play.</text>
+    <g transform="translate(640,80)">
+      <rect width="220" height="180" rx="16" fill="url(#g)"/>
+      <circle cx="60" cy="120" r="28" fill="#FFF"/>
+      <rect x="100" y="40" width="80" height="60" rx="8" fill="#FFF"/>
+    </g>
+  </g>
+</svg> 
